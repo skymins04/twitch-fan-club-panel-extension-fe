@@ -174,6 +174,7 @@ module.exports = (_env, argv) => {
       },
       port: devServerPort,
       hot: true,
+      allowedHosts: "all",
     };
   }
   if (argv.mode === "production") {

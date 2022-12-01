@@ -1,6 +1,7 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import { Provider as ReduxProvider } from "react-redux";
+import { ChakraProvider } from "@chakra-ui/react";
 import reduxPanelStore from "@ReduxPanel";
 import PanelApp from "@Component/App/PanelApp";
 
@@ -10,6 +11,8 @@ const container = document.getElementById("root") as HTMLElement;
 const root = createRoot(container);
 root.render(
   <ReduxProvider store={reduxPanelStore}>
-    <PanelApp />
+    <ChakraProvider>
+      <PanelApp />
+    </ChakraProvider>
   </ReduxProvider>,
 );
