@@ -1,9 +1,12 @@
+import Header from "@Component/Panel/Header";
 import React, { FC } from "react";
 
 const PanelApp: FC = () => {
   return (
     <>
-      <h1 className="text-red-400">Panel App</h1>
+      <div className="panel">
+        <Header />
+      </div>
     </>
   );
 };
